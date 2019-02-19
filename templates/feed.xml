@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>{{ videos_data['channel_data']['items'][0]['snippet']['title'] }}</title>
+        <link>https://www.youtube.com/channel/{{ videos_data['channel_data']['items'][0]['id'] }}</link>
+        <description>{{ videos_data['channel_data']['items'][0]['snippet']['description'] }}</description>
+        <language>en-us</language>
+        <copyright>Youtube LLC, BecauseOfProg, Gildas GH</copyright>
+        <generator>youtube-podcast</generator>
+
+        <image>
+            <title>{{ videos_data['channel_data']['items'][0]['snippet']['title'] }}</title>
+            <link>https://www.youtube.com/channel/{{ videos_data['channel_data']['items'][0]['id'] }}</link>
+            <url>{{ videos_data['channel_data']['items'][0]['snippet']['thumbnails']['high']['url'] }}</url>
+        </image>
+
+        <itunes:author>{{ videos_data['channel_data']['items'][0]['snippet']['title'] }}</itunes:author>
+        <itunes:category text="TV &amp; Film"></itunes:category>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:image href="{{ videos_data['channel_data']['items'][0]['snippet']['thumbnails']['high']['url'] }}" />
+        <itunes:owner>
+            <itunes:email>contact@becauseofprog.fr</itunes:email>
+            <itunes:name>{{ videos_data['channel_data']['items'][0]['snippet']['title'] }}</itunes:name>
+        </itunes:owner>
+        <itunes:subtitle>{{ videos_data['channel_data']['items'][0]['snippet']['title'] }}</itunes:subtitle>
+        <itunes:summary>{{ videos_data['channel_data']['items'][0]['snippet']['description'] }}</itunes:summary>
+        <itunes:block>no</itunes:block>
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="https://podcast.becauseofprog.fr/channel/{{ videos_data['channel_data']['items'][0]['id'] }}" />
+
+        {% for item in videos_data['items'] %}
+        <item>
+            <title>{{ item.snippet.title }}</title>
+            <link>https://www.youtube.com/watch?v={{ item.id }}</link>
+            <description>{{ item.snippet.description }}</description>
+            <enclosure url="https://podcast.becauseofprog.fr/download/{{ videos_data['podcast_type'] }}/{{ item.id }}.{{ videos_data['media_extension'] }}" type="{{ videos_data['podcast_type'] }}/{{ videos_data['media_extension'] }}"/>
+            <guid>https://www.youtube.com/watch?v={{ item.id }}</guid>
+            <pubDate>{{ item.snippet.publishedAt }}</pubDate>
+            <itunes:duration>{{ item.contentDetails.duration }}</itunes:duration>
+            <author>contact@becauseofprog.fr</author>
+
+            <itunes:subtitle>{{ item.snippet.title }}</itunes:subtitle>
+            <itunes:summary>{{ item.snippet.description }}</itunes:summary>
+        </item>
+        {% endfor %}
+    </channel>
+</rss>
