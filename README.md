@@ -13,7 +13,7 @@ This tool can convert any YouTube channel or a playlist into a downloadable podc
 2. Open up your podcasts app and add a new podcast by URL. Copy and paste in the URL from step 1, except change the domain to youtube-podcast's one.
 Your modified URL should look like one of these:
 
-+ `https://m.epiyoutube.com/user/latenight`
++ `https://podcast.becauseofprog.fr/user/latenight`
 + `https://podcast.becauseofprog.fr/channel/UCVTyTA7-g9nopHeHbeuvpRA`
 + `https://podcast.becauseofprog.fr/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb`
 
@@ -56,7 +56,7 @@ After=network.target
 User=sammy
 Group=www-data
 WorkingDirectory=/path/to/yt-podcast
-ExecStart=/usr/local/bin/uwsgi --ini blog-bop-v3.ini
+ExecStart=/usr/local/bin/uwsgi --ini youtube-podcast.ini
 
 [Install]
 WantedBy=multi-user.target
