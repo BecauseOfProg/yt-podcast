@@ -39,3 +39,6 @@ Thumbs.db
 # ignored files for youtube-podcast #
 #####################################
 g.py
+yt-podcast.code-workspace
+__pycache__/
+*.pyc
