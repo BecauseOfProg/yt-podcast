@@ -9,8 +9,10 @@ def render_feed(playlist_data, channel_data, podcast_type):
     '''Render the RSS feed from the playlist data,
     channel data, and desired podcast type (audio or video).'''
 
-    video_ids = [item['snippet']['resourceId']['videoId'] for item in playlist_data['items']]
-    videos_data = yt_api_call('videos', 'snippet,contentDetails', 'id', ','.join(video_ids))
+    video_ids = [item['snippet']['resourceId']['videoId']
+                 for item in playlist_data['items']]
+    videos_data = yt_api_call(
+        'videos', 'snippet,contentDetails', 'id', ','.join(video_ids))
 
     for item in videos_data['items']:
         # Reformat publication dates for RSS (RFC 2822)

@@ -5,102 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>youtube-podcast - YouTube to Podcast</title>
     <style>
-@import url('http://fonts.googleapis.com/css?family=Lato:400,300,700,900');
-body {
-	margin: 0;
-	padding: 0;
-	background:#EFEFEF;
-  font-family: 'Lato',"Roboto", sans-serif;
-}
-
-#head {
-	height: 350px;
-	background-image: url("https://images.unsplash.com/photo-1482442120256-9c03866de390?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8ae3531d294a8022f248560d913f6f53&auto=format&fit=crop&w=1080&q=80");
-	background-attachment: fixed;
-	background-repeat:no-repeat;
-	background-size: cover;
-  color: #fff;
-}
-#head h1 {
-	line-height:30px;
-	font-size:50px;
-  padding-left:50px;
-  font-weight: 300;
-}
-#head h2{
-	font-size:20px;
-  padding-left:50px;
-  font-weight: 300;
-}
-.header{
-	height:70px;
-	background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.25) 32%,rgba(0,0,0,0) 100%);
-}
-.tx {margin:20px;}
-.tx h1{
-	font-family: 'Lato',"Roboto", sans-serif;
-  font-weight: 300;
-  color: #000;
-	line-height:40px;
-	padding-top:50px;
-	font-size:50px;
-}
-
-.tx p{
-	font-family: 'Lato',"Roboto", sans-serif;
-    font-weight: 300;
-    color: #000;
-	font-size:20px;
-}
-.tx a{
-    color: #000;
-}
-.warn p{
-	font-family: 'Lato',"Roboto", sans-serif;
-    font-weight: 300;
-    color: red;
-	font-size:20px;
-}
-.h2 ul {
-  list-style-type: none;
-  padding-left:70px;
-  font-family: 'Lato',"Roboto", sans-serif;
-  font-weight: 300;
-  font-size:20px;
-}
-li {margin-bottom:5px;}
-ul {
-  padding-left:70px;
-  font-family: 'Lato',"Roboto", sans-serif;
-  font-weight: 300;
-  font-size:20px;
-}
-
-.btn {
-  -webkit-border-radius: 6;
-  -moz-border-radius: 6;
-  border-radius: 6px;
-  font-size: 20px;
-  background: #525252;
-  padding: 10px 20px 10px 20px;
-  border: solid #3b3b3b 1px;
-  text-decoration: none;
-  width:70px;
-  margin-left:50px;
-  text-align:center;
-  color:#fff;
-}
-
-.btn:hover, .btn:visited {
-  background: #666666;
-  text-decoration: none;
-}
-
-pre {
-  background-color: #c5c5c5;
-  padding: 10px;
-  border-radius: 6px;
-}
+      @import url('http://fonts.googleapis.com/css?family=Lato:400,300,700,900');
+      body {
+        margin: 0;
+        padding: 0;
+        background:#EFEFEF;
+        font-family: 'Lato',"Roboto", sans-serif;
+      }
+      #head {
+        height: 350px;
+        background-image: url("https://images.unsplash.com/photo-1482442120256-9c03866de390?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8ae3531d294a8022f248560d913f6f53&auto=format&fit=crop&w=1080&q=80");
+        background-attachment: fixed;
+        background-repeat:no-repeat;
+        background-size: cover;
+        color: #fff;
+      }
+      #head h1 {
+        line-height:30px;
+        font-size:50px;
+        padding-left:50px;
+        font-weight: 300;
+      }
+      #head h2{
+        font-size:20px;
+        padding-left:50px;
+        font-weight: 300;
+      }
+      .header{
+        height:70px;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.25) 32%,rgba(0,0,0,0) 100%);
+      }
+      .tx {
+        margin:20px;
+      }
+      .tx h1{
+        font-family: 'Lato',"Roboto", sans-serif;
+        font-weight: 300;
+        color: #000;
+        line-height:40px;
+        padding-top:50px;
+        font-size:50px;
+      }
+      .tx p{
+        font-family: 'Lato',"Roboto", sans-serif;
+          font-weight: 300;
+          color: #000;
+        font-size:20px;
+      }
+      .tx a{
+          color: #000;
+      }
+      .warn p{
+        font-family: 'Lato',"Roboto", sans-serif;
+          font-weight: 300;
+          color: red;
+        font-size:20px;
+      }
+      .h2 ul {
+        list-style-type: none;
+        padding-left:70px;
+        font-family: 'Lato',"Roboto", sans-serif;
+        font-weight: 300;
+        font-size:20px;
+      }
+      li {
+        margin-bottom:5px;
+      }
+      ul {
+        padding-left:70px;
+        font-family: 'Lato',"Roboto", sans-serif;
+        font-weight: 300;
+        font-size:20px;
+      }
+      .btn {
+        -webkit-border-radius: 6;
+        -moz-border-radius: 6;
+        border-radius: 6px;
+        font-size: 20px;
+        background: #525252;
+        padding: 10px 20px 10px 20px;
+        border: solid #3b3b3b 1px;
+        text-decoration: none;
+        width:70px;
+        margin-left:50px;
+        text-align:center;
+        color:#fff;
+      }
+      .btn:hover, .btn:visited {
+        background: #666666;
+        text-decoration: none;
+      }
+      pre {
+        background-color: #c5c5c5;
+        padding: 10px;
+        border-radius: 6px;
+      }
     </style>
   </head>
   <body>
@@ -110,52 +109,63 @@ pre {
 	    <h2>Convert any YouTube channel into a downloadable podcast </h2>
 	    <a href="https://github.com/BecauseOfProg/yt-podcast"><div class="btn">GitHub</div></a>
 	  </div>
-	
 	  <div class="tx">
+      <p>This tool can convert any YouTube channel or a playlist into a downloadable podcast. You can choose audio or video format, and use it online or install it on your own server.</p>
+      <br/><h2 id="online">Online</h2>
+      <ol>
+        <li>
+          <p>Head over to YouTube in your browser, and find the URL of your favorite user, channel, or playlist. The URL will look like one of these:</p>
+            <ul>
+              <li><code>https://m.youtube.com/user/latenight</code></li>
+              <li><code>https://www.youtube.com/channel/UCVTyTA7-g9nopHeHbeuvpRA</code></li>
+              <li><code>https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb</code></li>
+            </ul>
+        </li>
+        <li>
+          <p>Open up your podcasts app and add a new podcast by URL. Copy and paste in the URL from step 1, except change the <code>domain</code> to my server or another instance of youtube-podcast.
+        Your modified URL should look like one of these:</p>
+          <ul>
+            <li><code>https://{{DOMAIN}}/user/latenight</code></li>
+            <li><code>https://{{DOMAIN}}/channel/UCVTyTA7-g9nopHeHbeuvpRA</code></li>
+            <li><code>https://{{DOMAIN}}/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb</code></li>
+          </ul>
+        </li>
+        <li>
+          <p>youtube-podcast generates video podcasts by default. If you&#39;d like an audio-only podcast instead, simply add <code>?a</code> to the end of the URL for users or channels, or add <code>&amp;a</code> to the end of the URL for playlists:</p>
+          <ul>
+            <li><code>https://{{DOMAIN}}/user/latenight?a</code></li>
+            <li><code>https://{{DOMAIN}}/channel/UCVTyTA7-g9nopHeHbeuvpRA?a</code></li>
+            <li><code>https://{{DOMAIN}}/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;a</code></li>
+          </ul>
+        </li>
+          <li>
+            <p>Hit subscribe. You&#39;re all set. You can now download and refresh episodes, just like with any other podcast.</p>
+        </li>
+      </ol>
+      <p>
+        <strong>If you enjoy this service, please consider making a donation to help keep it up and running.</strong>
+      </p>
+      <br/>
+      
+      <h2 id="install-it-on-your-own-server">Install it on your own server</h2>
+      <p>If you don&#39;t want to use the online version, you can install EPI on your own server. It requires Python 3.5+ (tested on Python 3.5.3 and 3.6.1), pip and git.</p>
+      
+      <h3 id="steps-">Steps :</h3>
+      <ul>
+        <li>Clone the repository : <code>git clone https://github.com/BecauseOfProg/yt-podcast.git</code></li>
+        <li>Install requirements : <code>pip3 install -r requirements.txt</code></li>
+        <li>You&#39;ll need a <a href="https://stackoverflow.com/questions/44399219/where-to-find-the-youtube-api-key">YouTube API key</a>, put it in a new file named <code>g.py</code> in /epi/ like this : <code>KEY = &#39;R4nd0mAp1k3y&#39;</code></li>
+        <li>Use <code>python3 run.py</code>  to run youtube-dl</li>
+      </ul>
+      <p>The software is now installed and listening on port 5003. We&#39;ll need to allow access to this port from the Internet and configure a daemon to let the software run in background.</p>
+      <br/>
 
-<p>This tool can convert any YouTube channel or a playlist into a downloadable podcast. You can choose audio or video format, and use it online or install it on your own server.</p>
-<br/><h2 id="online">Online</h2>
-<ol>
-<li><p>Head over to YouTube in your browser, and find the URL of your favorite user, channel, or playlist. The URL will look like one of these:</p>
-<ul>
-<li><code>https://m.youtube.com/user/latenight</code></li>
-<li><code>https://www.youtube.com/channel/UCVTyTA7-g9nopHeHbeuvpRA</code></li>
-<li><code>https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb</code></li>
-</ul>
-</li>
-<li><p>Open up your podcasts app and add a new podcast by URL. Copy and paste in the URL from step 1, except change the <code>domain</code> to my server or another instance of youtube-podcast.
-Your modified URL should look like one of these:</p>
-<ul>
-<li><code>https://{{DOMAIN}}/user/latenight</code></li>
-<li><code>https://{{DOMAIN}}/channel/UCVTyTA7-g9nopHeHbeuvpRA</code></li>
-<li><code>https://{{DOMAIN}}/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb</code></li>
-</ul>
-</li>
-<li><p>youtube-podcast generates video podcasts by default. If you&#39;d like an audio-only podcast instead, simply add <code>?a</code> to the end of the URL for users or channels, or add <code>&amp;a</code> to the end of the URL for playlists:</p>
-<ul>
-<li><code>https://{{DOMAIN}}/user/latenight?a</code></li>
-<li><code>https://{{DOMAIN}}/channel/UCVTyTA7-g9nopHeHbeuvpRA?a</code></li>
-<li><code>https://{{DOMAIN}}/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;a</code></li>
-</ul>
-</li>
-<li><p>Hit subscribe. You&#39;re all set. You can now download and refresh episodes, just like with any other podcast.</p>
-</li>
-</ol>
-<p><strong>If you enjoy this service, please consider making a donation to help keep it up and running.</strong></p>
-<br/><h2 id="install-it-on-your-own-server">Install it on your own server</h2>
-<p>If you don&#39;t want to use the online version, you can install EPI on your own server. It requires Python 3.5+ (tested on Python 3.5.3 and 3.6.1), pip and git.</p>
-<h3 id="steps-">Steps :</h3>
-<ul>
-<li>Clone the repository : <code>git clone https://github.com/BecauseOfProg/yt-podcast.git</code></li>
-<li>Install requirements : <code>pip3 install -r requirements.txt</code></li>
-<li>You&#39;ll need a <a href="https://stackoverflow.com/questions/44399219/where-to-find-the-youtube-api-key">YouTube API key</a>, put it in a new file named <code>g.py</code> in /epi/ like this : <code>KEY = &#39;R4nd0mAp1k3y&#39;</code></li>
-<li>Use <code>python3 run.py</code>  to run youtube-dl</li>
-</ul>
-<p>The software is now installed and listening on port 5003. We&#39;ll need to allow access to this port from the Internet and configure a daemon to let the software run in background.</p>
-<br/><h3 id="nginx-reverse-proxy">Nginx reverse proxy</h3>
-<p>I am using nginx on my server. If you know the configuration for other web servers, a pull request is welcome!
-Put this configuration in a <code>server</code> block.</p>
-<pre><code><span class="hljs-attribute">location</span> / {
+      <h3 id="nginx-reverse-proxy">Nginx reverse proxy</h3>
+      <p>
+        I am using nginx on my server. If you know the configuration for other web servers, a pull request is welcome!
+        Put this configuration in a <code>server</code> block.
+      </p>
+      <pre><code><span class="hljs-attribute">location</span> / {
   <span class="hljs-attribute">proxy_pass</span>        http://127.0.0.1:5003;
   <span class="hljs-attribute">proxy_redirect</span>    <span class="hljs-literal">off</span>;
   <span class="hljs-attribute">proxy_set_header</span>  Host <span class="hljs-variable">$host</span>;
@@ -169,12 +179,16 @@ Put this configuration in a <code>server</code> block.</p>
   <span class="hljs-attribute">proxy_set_header</span> Connection <span class="hljs-string">"upgrade"</span>;
 
   <span class="hljs-attribute">more_clear_input_headers</span> <span class="hljs-string">'Accept-Encoding'</span>;
-}
-</code></pre><br/><h3 id="create-a-daemon">Create a daemon</h3>
-<p>We need to run EPI in the background. On Debian, create and edit a new systemd service :
-<code>vi /etc/systemd/system/epi.service</code>
-In this file, paste the following configuration :</p>
-<pre><code><span class="hljs-section">[Unit]</span>
+}</code></pre>
+      <br/>
+
+      <h3 id="create-a-daemon">Create a daemon</h3>
+      <p>
+        We need to run EPI in the background. On Debian, create and edit a new systemd service :
+        <code>vi /etc/systemd/system/epi.service</code>
+        In this file, paste the following configuration :
+      </p>
+      <pre><code><span class="hljs-section">[Unit]</span>
 <span class="hljs-attr">Description</span>=Convert any YouTube channel into a downloadable podcast
 <span class="hljs-attr">After</span>=network-<span class="hljs-literal">on</span>line.target
 <span class="hljs-section">
@@ -193,18 +207,19 @@ In this file, paste the following configuration :</p>
 <span class="hljs-attr">TimeoutStopSec</span>=<span class="hljs-number">300</span>
 <span class="hljs-section">
 [Install]</span>
-<span class="hljs-attr">WantedBy</span>=multi-user.target
-</code></pre><p>Make sure you edit user, group and the software path.</p>
-<p>Then you can run <code>service epi start</code> to start the software and access it from the address you set in nginx. The rules to create a podcast will be the same (<code>http(s)://domain.tld/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;a</code> for example).</p>
-<br/><h2 id="note">Note</h2>
-<p>You can also use EPI to download only one video :</p>
-<ul>
-<li>Video format : <a href="https://{{DOMAIN}}/download/video/VideoID.mp4">https://www.epiyoutube.com/download/video/VideoID.mp4</a></li>
-<li>Audio format : <a href="https://{{DOMAIN}}/download/audio/VideoID.m4a">https://www.epiyoutube.com/download/audio/VideoID.m4a</a></li>
-</ul>
-<hr>
-<p>Photo by neil godding on Unsplash</p>
-
+<span class="hljs-attr">WantedBy</span>=multi-user.target</code></pre>
+      <p>Make sure you edit user, group and the software path.</p>
+      <p>Then you can run <code>service epi start</code> to start the software and access it from the address you set in nginx. The rules to create a podcast will be the same (<code>http(s)://domain.tld/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&amp;a</code> for example).</p>
+      <br/>
+      
+      <h2 id="note">Note</h2>
+      <p>You can also use EPI to download only one video :</p>
+      <ul>
+        <li>Video format : <a href="https://{{DOMAIN}}/download/video/VideoID.mp4">https://www.epiyoutube.com/download/video/VideoID.mp4</a></li>
+        <li>Audio format : <a href="https://{{DOMAIN}}/download/audio/VideoID.m4a">https://www.epiyoutube.com/download/audio/VideoID.m4a</a></li>
+      </ul>
+      <hr/>
+      <p>Photo by neil godding on Unsplash</p>
     </div>
   </body>
 </html>
