@@ -14,6 +14,6 @@ def stream_url(media_type, video_id, suffix):
     elif media_type == "audio":
         r = API_URL + BASE_VIDEO_URL + video_id + FORMAT_AUDIO
     else:
-        return("Format non pris en charge.")
+        return("Unsupported format.")
 
     return redirect(r)
