@@ -6,6 +6,7 @@ API_URL = "https://panel.becauseofprog.fr/youtube-dl/download?url="
 FORMAT_VIDEO = "&format=best%5Bprotocol%3Dhttps%5D%2Fbest%5Bprotocol%3Dhttp%5D"
 FORMAT_AUDIO = "&format=best%5Bprotocol%3Dhttps%5D%2Fbest%5Bprotocol%3Dhttp%5D"
 
+
 @app.route("/download/<media_type>/<video_id>.<suffix>")
 def stream_url(media_type, video_id, suffix):
     '''Redirect for media download'''
@@ -14,6 +15,6 @@ def stream_url(media_type, video_id, suffix):
     elif media_type == "audio":
         r = API_URL + BASE_VIDEO_URL + video_id + FORMAT_AUDIO
     else:
-        return("Format non pris en charge.")
+        return("Unsupported format.")
 
     return redirect(r)
