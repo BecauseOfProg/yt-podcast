@@ -1,17 +1,19 @@
 from flask import redirect
 from app import app
-import pafy
 
 BASE_VIDEO_URL = 'https://www.youtube.com/watch?v='
-
+API_URL = "https://panel.becauseofprog.fr/youtube-dl/download?"
+FORMAT_VIDEO = "&format=best%5Bprotocol%3Dhttps%5D%2Fbest%5Bprotocol%3Dhttp%5D"
+FORMAT_AUDIO = ""
 
 @app.route("/download/<media_type>/<video_id>.<suffix>")
 def stream_url(media_type, video_id, suffix):
     '''Redirect for media download'''
-    video = pafy.new(BASE_VIDEO_URL + video_id)
-    if media_type == 'audio':
-        stream = video.getbestaudio(preftype="m4a")
+    if media_type == 'video':
+        r = API_URL + BASE_VIDEO_URL + video_id + FORMAT_VIDEO
+    elif media_type = "audio":
+        r = API_URL + BASE_VIDEO_URL + video_id + FORMAT_VIDEO
     else:
-        stream = video.getbest(preftype="mp4")
+        return("Format non pris en charge.")
 
-    return redirect(stream.url)
+    return redirect(r)
