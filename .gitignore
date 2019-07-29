@@ -41,4 +41,12 @@ Thumbs.db
 g.py
 yt-podcast.code-workspace
 __pycache__/
+views/__pycache__/
 *.pyc
+*.cpython-37.pyc
+.pyc
+.cpython-37.pyc
+views/__pycache__/download.cpython-37.pyc
+views/__pycache__/channel.cpython-37.pyc
+__pycache__/app.cpython-37.pyc
+views/__pycache__/index.cpython-37.pyc

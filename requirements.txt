@@ -2,3 +2,4 @@ flask>=1.0.2
 requests>=2.21.0
 pafy>=0.5.4
 youtube-dl>=2019.2.18
+isodate
