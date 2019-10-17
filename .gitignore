@@ -41,6 +41,9 @@ Thumbs.db
 g.py
 yt-podcast.code-workspace
 __pycache__/
+__pycache__/*
+__*
+__pycache__
 views/__pycache__/
 *.pyc
 *.cpython-37.pyc
