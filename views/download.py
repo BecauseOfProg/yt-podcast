@@ -15,24 +15,7 @@ ydl_opts_video = {
     'outtmpl': '%(id)s%(ext)s'
 }
 
-BASE_VIDEO_URL = 'https://www.youtube.com/watch?v='
-API_URL = "https://panel.becauseofprog.fr/youtube-dl/download?url="
-FORMAT_VIDEO = "&format=best%5Bprotocol%3Dhttps%5D%2Fbest%5Bprotocol%3Dhttp%5D"
-FORMAT_AUDIO = "&format=bestaudio[ext=m4a]"
-
 @app.route("/download/<media_type>/<video_id>.<suffix>")
-def stream_url(media_type, video_id, suffix):
-    '''Redirect for media download'''
-    if media_type == 'video':
-        r = API_URL + BASE_VIDEO_URL + video_id + FORMAT_VIDEO
-    elif media_type == "audio":
-        r = API_URL + BASE_VIDEO_URL + video_id + FORMAT_AUDIO
-    else:
-        return("Unsupported format.")
-
-    return redirect(r)
-
-@app.route("/youtube-dl/<media_type>/<video_id>.<suffix>")
 def yt_dl(media_type, video_id, suffix):
     '''Redirect for media download'''
 
