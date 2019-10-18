@@ -36,7 +36,7 @@
             <guid>https://www.youtube.com/watch?v={{ item.id }}</guid>
             <pubDate>{{ item.snippet.publishedAt }}</pubDate>
             <itunes:duration>{{ item.contentDetails.duration }}</itunes:duration>
-            <author>contact@becauseofprog.fr</author>
+            <author>contact@becauseofprog.fr (Contact BecauseOfProg)</author>
 
             <itunes:subtitle>{{ item.snippet.title }}</itunes:subtitle>
             <itunes:summary>{{ item.snippet.description }}</itunes:summary>
