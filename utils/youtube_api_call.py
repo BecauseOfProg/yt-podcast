@@ -12,7 +12,7 @@ def yt_api_call(path, part, id_type, id_value):
     params = {'key': KEY,
               id_type: id_value,
               'part': part,
-              'maxResults': 50}
+              'maxResults': 10}
 
     data_url = (ENDPOINT + path + '?' + urlencode(params))
 
