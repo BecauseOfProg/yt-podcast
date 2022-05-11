@@ -32,7 +32,7 @@
             <title>{{ item.snippet.title }}</title>
             <link>https://www.youtube.com/watch?v={{ item.id }}</link>
             <description>{{ item.snippet.description }}</description>
-            <enclosure url="https://podcast.becauseofprog.fr/download/{{ videos_data['podcast_type'] }}/{{ item.id }}.{{ videos_data['media_extension'] }}" type="{{ videos_data['podcast_type'] }}/{{ videos_data['media_extension'] }}"/>
+            <enclosure url="http://{{ DOMAIN }}/download/{{ videos_data['podcast_type'] }}/{{ item.id }}.{{ videos_data['media_extension'] }}" type="{{ videos_data['podcast_type'] }}/{{ videos_data['media_extension'] }}"/>
             <guid>https://www.youtube.com/watch?v={{ item.id }}</guid>
             <pubDate>{{ item.snippet.publishedAt }}</pubDate>
             <itunes:duration>{{ item.contentDetails.duration }}</itunes:duration>
