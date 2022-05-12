@@ -17,7 +17,7 @@ def render_feed(playlist_data, channel_data, podcast_type):
     for item in videos_data['items']:
         # Reformat publication dates for RSS (RFC 2822)
         date_ISO = item['snippet']['publishedAt']
-        d = datetime.datetime.strptime(date_ISO, "%Y-%m-%dT%H:%M:%S.%fZ")
+        d = datetime.datetime.strptime(date_ISO, "%Y-%m-%dT%H:%M:%SZ")
         date_RFC = d.strftime('%a, %d %b %Y %H:%M:%S +0000')
         item['snippet']['publishedAt'] = date_RFC
         # Reformat file duration for iTunes
