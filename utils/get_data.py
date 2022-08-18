@@ -12,7 +12,7 @@ def get_channel_data(id_type, user):
             id_value  = user
         )
 
-        # Get only returned IDs
+        # Get only returned channel IDs
         cIDs = [item['id']['channelId'] for item in guess_channel['items']]
 
         # Get more details of all returned channels
@@ -26,7 +26,7 @@ def get_channel_data(id_type, user):
         # Search for exact customUrl match in all channel details and set user variable
         for item in guess_channel['items']:
             if "customUrl" in item['snippet']:
-                if user.casefold()==item['snippet']["customUrl"].casefold():
+                if ('@' + user).casefold()==item['snippet']["customUrl"].casefold():
                     user = item['id']
                     break
 
