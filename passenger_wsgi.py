@@ -8,7 +8,7 @@ import sys
 INTERP = "/usr/bin/python3"
 if sys.executable != INTERP: os.execl(INTERP, INTERP, *sys.argv)
 
-sys.path.append(os.getcwd())
+sys.path.append(os.path.dirname(__file__))
 
 import views.channel
 import views.download
