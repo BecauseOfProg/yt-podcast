@@ -157,7 +157,7 @@ Put the source under, say, `/var/www/html/ytpodcasts` and put the following into
 </Macro>
 
 Use force_https ytpodcasts.domain.com
-Use generic_wsgi passenger_wsgi.py ytpodcasts.domain.com ytpodcasts.domain.com
+Use generic_wsgi /var/www/html/ytpodcasts/passenger_wsgi.py ytpodcasts.domain.com ytpodcasts.domain.com
 
 UndefMacro force_https
 UndefMacro generic_wsgi
