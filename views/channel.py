@@ -5,12 +5,14 @@ from flask import request
 from g import DOMAIN
 
 
-@app.route("/user/<user>", defaults={'id_type': 'user', 'format': 'video'})
-@app.route("/channel/<user>", defaults={'id_type': 'channel', 'format': 'video'})
-@app.route("/user/<user>/audio", defaults={'id_type': 'user', 'format': 'audio'})
+@app.route("/user/<user>",          defaults={'id_type': 'user',    'format': 'video'})
+@app.route("/channel/<user>",       defaults={'id_type': 'channel', 'format': 'video'})
+@app.route("/c/<user>",             defaults={'id_type': 'custom',  'format': 'video'})
+@app.route("/user/<user>/audio",    defaults={'id_type': 'user',    'format': 'audio'})
 @app.route("/channel/<user>/audio", defaults={'id_type': 'channel', 'format': 'audio'})
+@app.route("/c/<user>/audio",       defaults={'id_type': 'custom',  'format': 'audio'})
 def user(id_type, user, format):
-    '''Generate a feed for a channel'''
+    '''Generate a feed for a channel or user or custom URL'''
     channel_data = get_channel_data(id_type, user)
 
     try:

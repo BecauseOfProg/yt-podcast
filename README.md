@@ -27,6 +27,7 @@ This tool can convert any YouTube channel or a playlist into a downloadable podc
 - `https://m.youtube.com/user/latenight`
 - `https://www.youtube.com/channel/UCVTyTA7-g9nopHeHbeuvpRA`
 - `https://www.youtube.com/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb`
+- `https://www.youtube.com/c/NotJustBikes`
 
 2. Open up your podcasts app and add a new podcast by URL. Copy and paste in the URL from step 1, except change the domain to youtube-podcast's one.
    Your modified URL should look like one of these:
@@ -34,12 +35,14 @@ This tool can convert any YouTube channel or a playlist into a downloadable podc
 - `https://podcast.becauseofprog.fr/user/latenight`
 - `https://podcast.becauseofprog.fr/channel/UCVTyTA7-g9nopHeHbeuvpRA`
 - `https://podcast.becauseofprog.fr/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb`
+- `https://podcast.becauseofprog.fr/c/NotJustBikes`
 
 3. youtube-podcast generates video podcasts by default. If you'd like an audio-only podcast instead, simply add `?a` to the end of the URL for users or channels, or add `&a` to the end of the URL for playlists:
 
 - `https://podcast.becauseofprog.fr/user/latenight?a`
 - `https://podcast.becauseofprog.fr/channel/UCVTyTA7-g9nopHeHbeuvpRA?a`
 - `https://podcast.becauseofprog.fr/playlist?list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&a`
+- `https://podcast.becauseofprog.fr/c/NotJustBikes?a`
 
 4. Hit subscribe. You're all set. You can now download and refresh episodes, just like with any other podcast.
 
@@ -51,7 +54,7 @@ If you don't want to use the online version, you can install youtube-podcast on 
 
 ### Steps
 
-- Clone the repository : `git clone https://github.com/BecauseOfProg/yt-podcast.git`
+- Clone the repository : `git clone https://github.com/avibrazil/yt-podcast.git`
 - Install requirements : `pip3 install -r requirements.txt`
 - You'll need a [YouTube API key](https://stackoverflow.com/questions/44399219/where-to-find-the-youtube-api-key), put it in a new file named `g.py` in /epi/ like this : `KEY = 'R4nd0mAp1k3y'`
 - You must also add the domain or url for your yt-podcast instance in g.py : `DOMAIN = 'domain.tld'`

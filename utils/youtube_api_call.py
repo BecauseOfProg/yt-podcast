@@ -14,6 +14,9 @@ def yt_api_call(path, part, id_type, id_value):
               'part': part,
               'maxResults': 10}
 
+    if id_type == 'q':
+        params['type'] = 'channel'
+
     data_url = (ENDPOINT + path + '?' + urlencode(params))
 
     r = requests.get(data_url)
