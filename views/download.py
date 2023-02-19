@@ -1,7 +1,6 @@
 from flask import redirect
 from app import app
 
-#import youtube_dl
 import yt_dlp as youtube_dl
 
 ydl_opts_audio = {
